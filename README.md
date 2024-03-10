@@ -1,10 +1,12 @@
 #PlayerDataSQL
 
 基于聪聪PlayerDataSQL进行修改
-修改内容如下
+## 修改内容如下
 + 精简只剩下1.12.2原版数据
-+ 不同步玩家血量数据(修复AP卡血BUG）
 + 增加数据加载时提示玩家
+## 未来计划内容
++ 使用HikariCP
++ 修复AP卡血BUG
 ### 出现问题概不负责
 ---
 原地址: https://gitee.com/Imcc/PlayerDataSQL
