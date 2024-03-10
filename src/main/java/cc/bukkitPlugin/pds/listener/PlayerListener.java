@@ -51,6 +51,7 @@ public class PlayerListener extends AListener<PlayerDataSQL> {
         if (!this.mPlugin.getConfigManager().mNoRestoreIfSQLDataNotExist) {
             this.mUserMan.cleanPlayerData(pEvent.getPlayer());
         }
+        pEvent.getPlayer().sendMessage(this.mPlugin.C("LoadDataMsg"));
         Bukkit.getScheduler().runTaskAsynchronously(this.mPlugin, new LoadUserTask(pEvent.getPlayer(), this.mUserMan));
     }
 

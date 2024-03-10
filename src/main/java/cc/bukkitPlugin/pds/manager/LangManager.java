@@ -69,7 +69,8 @@ public class LangManager extends TLangManager<PlayerDataSQL> {
         this.mConfig.addDefault("WordPlayer", "玩家");
         this.mConfig.addDefault("WordYou", "你");
         this.mConfig.addDefault("WordScriptName", "脚本名称");
-
+        this.mConfig.addDefault("LoadDataMsg","§f[§a系统§f] §e正在载入数据...");
+        this.mConfig.addDefault("LoadDataOkMsg","§f[§a系统§f] §e成功载入数据");
     }
 
 }

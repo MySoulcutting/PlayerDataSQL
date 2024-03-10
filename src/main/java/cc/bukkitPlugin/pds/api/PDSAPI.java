@@ -56,7 +56,7 @@ public class PDSAPI implements Listener, IConfigModel {
      * 注册一个数据模块
      * <p>
      * 外部注册请只在{@link CallDataModelRegisterEvent}事件被触发时注册<br>
-     * 否则,请手动调用{@link #checkModels()}
+     * 否则,请手动调用
      * </p>
      * 
      * @param pModel

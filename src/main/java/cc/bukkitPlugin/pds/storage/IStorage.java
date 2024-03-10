@@ -11,7 +11,7 @@ public interface IStorage {
     /**
      * 根据名字获取用户数据
      * 
-     * @param pName
+     * @param pPlayer
      *            用户名字,忽略大小写
      * @return 用户数据,如果不存在,则返回null
      * @throws SQLException
@@ -45,7 +45,7 @@ public interface IStorage {
      * 如果未设置主键,会自动添加主键
      * </p>
      * 
-     * @param pName
+     * @param pPlayer
      *            用户名
      * @param pCols
      *            列名

@@ -53,7 +53,7 @@ public class MySQL extends AManager<PlayerDataSQL> implements IConfigModel, INee
     protected String mUsername = "root";
     protected String mPassword = "root";
     protected String mDBHost = "localhost:3306";
-    protected String mURLParams = "useUnicode=true&characterEncoding=utf8&autoReconnect=true&useAffectedRows=true";
+    protected String mURLParams = "useUnicode=true&characterEncoding=utf8&autoReconnect=true&useAffectedRows=true&useSSL=false";
     protected int mQueryTimeout = 5;
     protected int mNetworkTimeout = 10;
     protected int mLoginTimeout = 5;

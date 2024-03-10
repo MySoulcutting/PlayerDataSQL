@@ -69,6 +69,12 @@ public class PlayerDataSQL extends ABukkitPlugin<PlayerDataSQL> {
      * 调用操作请在reload函数中进行
      */
     public void onEnable() {
+        Log.info("§2该版本由白魂(WhiteSoul)魔改");
+        Log.info("§b修改内容如下：");
+        Log.info("§a精简只剩下1.12.2原版数据");
+        Log.info("§a不同步玩家血量数据(修复AP卡血BUG)");
+        Log.info("§a增加数据加载时提示玩家");
+        Log.info("§c出现问题概不负责！");
         // 强制初始化工具类
         String.valueOf(NMSUtil.mTestAPIVersion).length();
         String.valueOf(PDSNBTUtil.method_NBTCompressedStreamTools_readCompressed).length();

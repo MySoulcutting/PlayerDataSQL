@@ -21,7 +21,7 @@ import cc.commons.util.reflect.filter.MethodFilter;
 
 public abstract class ADM_WorldData extends ADataModel {
 
-    /** WorldSavedData WorldSavedData loadItemData(Class;String) */
+    /** WorldSavedData loadItemData(Class;String) */
     protected static Method method_World_loadItemData = null;
     /** void setItemData(String;WorldSavedData) */
     protected static Method method_World_setItemData = null;
@@ -187,7 +187,7 @@ public abstract class ADM_WorldData extends ADataModel {
      * 
      * @param pPlayer
      *            玩家
-     * @param WorldSaveData
+     * @param pWSDClazz
      *            继承类
      * @return 数据模型
      */

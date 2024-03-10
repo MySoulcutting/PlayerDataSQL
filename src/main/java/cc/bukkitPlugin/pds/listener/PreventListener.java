@@ -143,7 +143,7 @@ public class PreventListener extends AListener<PlayerDataSQL> {
     /**
      * 处理事件
      * 
-     * @param pUuid
+     * @param pPlayer
      *            玩家UUID
      * @param pEvent
      *            事件
