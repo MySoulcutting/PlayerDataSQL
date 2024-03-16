@@ -1,5 +1,6 @@
 package cc.bukkitPlugin.pds.listener;
 
+import static org.bukkit.event.EventPriority.HIGHEST;
 import static org.bukkit.event.EventPriority.MONITOR;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.WeakHashMap;
 
+import cc.bukkitPlugin.pds.events.PlayerDataLoadCompleteEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -86,6 +88,10 @@ public class PlayerListener extends AListener<PlayerDataSQL> {
     @EventHandler(priority = MONITOR)
     public void onInvClose(InventoryCloseEvent pEvent) {
         ClosedInvs.add(pEvent.getInventory());
+    }
+    @EventHandler
+    public void onPlayerDataLoadComplete(PlayerDataLoadCompleteEvent event) {
+        event.getPlayer().sendMessage(this.mPlugin.C("LoadDataOkMsg"));
     }
 
 }
